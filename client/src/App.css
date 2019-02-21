@@ -1,33 +1,260 @@
-.App {
-  text-align: center;
+/*App*/
+.AppContainer{
+    width: 100%;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.AppRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.NavHolder{
+    width: 10%;
+    height: 100vh;
+}
+.ColPageHolder{
+    width: 90%;
+    overflow: hidden;
+}
+/*MainMenu*/
+.ContainerHolder{
+    width: 10%;
+    position: fixed;
+}
+.LogoHolder{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoImage{
+    height: 80%;
+}
+.LinkHolder{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+.LanguageHolder{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+.LinkText{
+    color: gray;
+}
+/*HOME PAGE*/
+.PageHolder{
+    width: 100%;
+    background-color: green;
+}
+.FirstContainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/img/ElectricalFactory.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.ImageHolder01{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.Image01{
+    height: 100vh;
+}
+.ContentHolder01{
+    background-color: #f1f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15vh;
+}
+.Title01{
+}
+.TextHolder{
+    padding: 0 150px;
+}
+.TextHolderOrange{
+    color: #D64E25;
+    padding: 0 150px;
+}
+.FutureContainer{
+    width: 100%;
+    height: 80vh;
+    background-image: url("./assets/img/RobotArm.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+.ContentHolder02{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.TextHolder01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TextHolder01 > h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+.TextHolder01 > span {
+    color: #fff;
+    font-size: 5.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 75px;
+}
+.ButtonHolder{
+    margin-top: 50px
+}
+.ContactUs{
+    margin-right: 2vw ;
+    background-color: #202020;
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+.ReadHistory{
+    background-color: #e75023;
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+.ProductsAndServiceConatainer{
+    width: 100%;
+    background-color: #f1f2f2;
+    height: 110vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.ServicesHolder {
+    height: 50%;
+    display: flex;
+}
+.ProductsHolder{
+    height: 50%;
+    display: flex;
+}
+.ImageHolder02{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ContentHolder03{
+    height: 100%;
+    width: 50%;
+    padding: 0px 16% 0px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ContentHolder04{
+    height: 100%;
+    width: 50%;
+    padding: 0px 5% 0px 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ContentHolder03 > button, .ContentHolder04 > button{
+    background-color: #202020;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 8vw;
+}
+.Image03{
+    height: 100%;
+}
+.ImageHolder03{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+/*Footer*/
+.FooterContainer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Col12{
+    width: 25%;
+    height: 100%;
+}
+.ImageHolder04{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Image04{
+    height: 70%;
+}
+.ContentHolder05{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.ContentHolder05 > h3 {
+    font-size: 24px;
+    color: #e75023;
+}
+.ContentHolder05 > div >ul {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    padding: 0 !important;
+    padding-left: 20px !important;
+    color: #e75023;
+}
+.ContentHolder05 > div> ul > li > p {
+    color: #58595b;
+}
+.TimeIcon{
+    color: #e75023;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.TimingText, .ContactTextFirst{
+    margin-top: 3vh;
+}
+.ContentHolder06{
+    width: 80%;
+    height: 40vh;
+    display: flex;
 }
