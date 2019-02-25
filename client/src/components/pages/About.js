@@ -1,26 +1,27 @@
 import React, {Component} from 'react';
 // Images
-import Customers from "../../assets/img/Customers.png";
-import Vi from "../../assets/video/PlasticInjection.mp4";
+import Century from "../../assets/img/Century.png";
+import Vi from "../../assets/video/About.mp4";
 
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 // Animations
 import {Animated} from "react-animated-css";
+import Services from "../../assets/img/Services.jpg";
+import Img1927 from "../../assets/img/1972.jpg";
+import Img1975 from "../../assets/img/1975.jpg";
+import Img1990 from "../../assets/img/1990.jpg";
+import Img2009 from "../../assets/img/2009.jpg";
+import Img2019 from "../../assets/img/2019.jpg";
+import Img2025 from "../../assets/img/2025.jpg";
+
+
 // import {Parallax} from 'react-scroll-parallax';
 
 class About extends Component {
-    constructor(props) {
-        super(props)
-        this.myRef1 = React.createRef()   // Create a ref object
-        this.myRef2 = React.createRef()
-        this.myRef3 = React.createRef()
-    }
 
     componentDidMount() {
         window.scrollTo(0, 0);
     }
 
-    scrollToMyRef = (ref) =>  ref.current.scrollIntoView({behavior: 'smooth',block: "nearest", inline :'nearest'})
 
     render() {
         return (
@@ -34,44 +35,84 @@ class About extends Component {
 
                         <div className="OnVideo">
                             <div className="ImageHolder05">
-                                <img src={Customers} alt="" className="Image02"/>
+                                <img src={Century} alt="" className="Image02"/>
 
                             </div>
-                            <div className="Submenu">
-                                <Link className="MenuItem" activeClass="active" to="test1" spy={true} smooth={true} >
-                                    Test 1
-                                </Link>
-                                <Link className="MenuItem" activeClass="active" to="test2" spy={true} smooth={true} >
-                                    Test 2
-                                </Link>
-                                <Link className="MenuItem" activeClass="active" to="test3" spy={true} smooth={true} >
-                                    Test 3
-                                </Link>
-
-                            </div>
-
-                            <div className="ContentHolder08">
-                                <div className="FirstContent">
-                                    <h1>Title</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            <div className="ProductsAndServiceConatainer">
+                                <div className="ServicesHolder">
+                                    <div className="ImageHolder07">
+                                        <img src={Img1927} className="Image03" alt=""/>
+                                    </div>
+                                    <div className="ContentHolder03">
+                                        <h1>1972</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
                                 </div>
-                                <Element name="test1"  className="SecondContent">
-                                    <h1>Title1</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                </Element>
-                                <Element name="test2" className="FirstContent">
-                                    <h1>Title2</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                </Element>
-                                <Element name="test3" className="ThirdContent">
-                                    <h1>Title3</h1>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                </Element>
+                                <div className="ProductsHolder">
+                                    <div className="ContentHolder04">
+                                        <h1>1975</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
+                                    <div className="ImageHolder06">
+                                        <img src={Img1975} className="Image03" alt=""/>
+                                    </div>
+
+                                </div>
+
+                                <div className="ServicesHolder">
+                                    <div className="ImageHolder07">
+                                        <img src={Img1990} className="Image03" alt=""/>
+                                    </div>
+                                    <div className="ContentHolder03">
+                                        <h1>1990</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="ProductsHolder">
+                                    <div className="ContentHolder04">
+                                        <h1>2009</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
+                                    <div className="ImageHolder06">
+                                        <img src={Img2009} className="Image03" alt=""/>
+                                    </div>
+
+                                </div>
+                                <div className="ServicesHolder">
+                                    <div className="ImageHolder07">
+                                        <img src={Img2019} className="Image03" alt=""/>
+                                    </div>
+                                    <div className="ContentHolder03">
+                                        <h1>2019</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="ProductsHolder">
+                                    <div className="ContentHolder04">
+                                        <h1>2025</h1>
+                                        <p>
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                        </p>
+                                    </div>
+                                    <div className="ImageHolder06">
+                                        <img src={Img2025} className="Image03" alt=""/>
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>
                     </div>
-
 
 
                 </div>

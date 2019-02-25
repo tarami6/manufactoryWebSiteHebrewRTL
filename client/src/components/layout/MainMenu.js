@@ -20,10 +20,10 @@ class MainMenu extends Component {
                     <Link to="/products" className="LinkText">PRODUCTS</Link>
                 </div>
                 <div className="LinkHolder">
-                    <a href="" className="LinkText">ABOUT</a>
+                    <Link to="/about" className="LinkText">ABOUT</Link>
                 </div>
                 <div className="LinkHolder">
-                    <a href="" className="LinkText">CONTACT</a>
+                    <Link to="/contact" className="LinkText">CONTACT</Link>
                 </div>
                 <div className="LanguageHolder">
                     <a href="" className="LinkText">HEB | ENG</a>

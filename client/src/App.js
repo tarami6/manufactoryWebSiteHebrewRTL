@@ -12,6 +12,8 @@ import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 
 
 
@@ -26,7 +28,7 @@ class App extends Component {
     componentWillMount() {
         setTimeout(() => this.setState({
             loading: false
-        }), 100);
+        }), 500);
     }
 
     render() {
@@ -45,6 +47,8 @@ class App extends Component {
                                     <Route exact path="/" component={HomePage} />
                                     <Route exact path="/services" component={Services}/>
                                     <Route exact path="/products" component={Products}  />
+                                    <Route exact path="/about" component={About}  />
+                                    <Route exact path="/contact" component={Contact}  />
                                     <Footer/>
                                 </div>
 

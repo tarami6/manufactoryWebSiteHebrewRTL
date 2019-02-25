@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // Images
-import Customers from "../../assets/img/Customers.png";
+import PerfectProducts from "../../assets/img/PerfectProducts.png";
 import Vi from "../../assets/video/Products.mp4";
 
 
@@ -29,7 +29,7 @@ class Products extends Component {
 
                         <div className="OnVideo">
                             <div className="ImageHolder05">
-                                <img src={Customers} alt="" className="Image02"/>
+                                <img src={PerfectProducts} alt="" className="Image02"/>
 
                             </div>
                         </div>
