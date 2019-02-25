@@ -9,6 +9,9 @@ import {Animated} from "react-animated-css";
 import {Parallax} from 'react-scroll-parallax';
 
 class HomePage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>

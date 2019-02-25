@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import Logo from '../../assets/img/largeLogo.png';
 
 class MainMenu extends Component {
@@ -10,13 +11,13 @@ class MainMenu extends Component {
 
                     </div>
                 <div className="LinkHolder">
-                    <a href="" className="LinkText">HOME</a>
+                    <Link to="/" className="LinkText">HOME</Link>
                 </div>
                 <div className="LinkHolder">
-                    <a href="" className="LinkText">SERVICES</a>
+                    <Link to="/services" className="LinkText">SERVICES</Link>
                 </div>
                 <div className="LinkHolder">
-                    <a href="" className="LinkText">PRODUCTS</a>
+                    <Link to="/products" className="LinkText">PRODUCTS</Link>
                 </div>
                 <div className="LinkHolder">
                     <a href="" className="LinkText">ABOUT</a>

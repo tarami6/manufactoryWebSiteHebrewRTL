@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
+
+
 import './App.css';
 //
 import {Animated} from "react-animated-css";
@@ -8,6 +10,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import MainMenu from './components/layout/MainMenu';
 import Footer from './components/layout/Footer';
 import HomePage from './components/pages/HomePage';
+import Services from './components/pages/Services';
+import Products from './components/pages/Products';
+
+
 
 class App extends Component {
     constructor(props) {
@@ -36,7 +42,9 @@ class App extends Component {
                                     <MainMenu/>
                                 </div>
                                 <div className="ColPageHolder">
-                                    <Route exact path="/" component={HomePage}/>
+                                    <Route exact path="/" component={HomePage} />
+                                    <Route exact path="/services" component={Services}/>
+                                    <Route exact path="/products" component={Products}  />
                                     <Footer/>
                                 </div>
 
