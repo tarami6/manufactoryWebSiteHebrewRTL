@@ -96,7 +96,9 @@ class MainMenu extends Component {
 
                                 <p>Please</p>
                                 <p>Scroll</p>
+                                <div onClick={this.scrolDown} >
                                 <p>Down</p>
+                                </div>
                                 <span className="scroll_arrows one"></span>
                                 <span className="scroll_arrows two"></span>
                                 <span className="scroll_arrows three"></span>
