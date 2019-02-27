@@ -1,33 +1,107 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
 import Logo from '../../assets/img/largeLogo.png';
+import {Animated} from "react-animated-css";
+import classnames from 'classname';
 
 class MainMenu extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            currentPage: 'home'
+        }
+    }
+
+    scrolDown() {
+        let height = window.innerHeight;
+        window.scrollTo({
+            top: height,
+            behavior: 'smooth'
+        });
+    }
+
+    componentDidMount() {
+        this.setState({currentPage: this.props.state.currentPage})
+    }
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        if (this.props.state.currentPage !== nextProps.state.currentPage) {
+            this.setState({currentPage: nextProps.state.currentPage})
+        }
+    }
+
+
     render() {
+        console.log("page", this.state.currentPage)
         return (
             <div className="ContainerHolder">
-                    <div className="LogoHolder">
-                        <img src={Logo} alt="" className="LogoImage"/>
+                <div className="LogoHolder">
+                    <img src={Logo} alt="" className="LogoImage"/>
 
+                </div>
+                {this.props.state.menuScrolled || this.props.state.counter > 2 ?
+                    <div>
+                        <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+                            <div className={classnames('LinkHolder',
+                                {'CurrentPageLinkHolder': this.state.currentPage === 'home'})}
+                            >
+                                <Link to="/"
+                                      className={classnames('LinkText',
+                                          {'CurrentPageLinkText': this.state.currentPage === 'home'})}
+                                >HOME</Link>
+                            </div>
+
+                            <div className={classnames('LinkHolder',
+                                {'CurrentPageLinkHolder': this.state.currentPage === 'services'})}
+                            >
+                                <Link to="/services" className={classnames('LinkText',
+                                    {'CurrentPageLinkText': this.state.currentPage === 'services'})}
+                                >SERVICES</Link>
+                            </div>
+
+                            <div className={classnames('LinkHolder',
+                                {'CurrentPageLinkHolder': this.state.currentPage === 'products'})}
+                            >
+                                <Link to="/products" className={classnames('LinkText',
+                                    {'CurrentPageLinkText': this.state.currentPage === 'products'})}
+                                >PRODUCTS</Link>
+                            </div>
+
+                            <div className={classnames('LinkHolder',
+                                {'CurrentPageLinkHolder': this.state.currentPage === 'about'})}
+                            >
+                                <Link to="/about" className={classnames('LinkText',
+                                    {'CurrentPageLinkText': this.state.currentPage === 'about'})}
+                                >ABOUT</Link>
+                            </div>
+
+                            <div className={classnames('LinkHolder',
+                                {'CurrentPageLinkHolder': this.state.currentPage === 'contact'})}
+                            >
+                                <Link to="/contact" className={classnames('LinkText',
+                                    {'CurrentPageLinkText': this.state.currentPage === 'contact'})}
+                                >CONTACT</Link>
+                            </div>
+                            <div className="LanguageHolder">
+                                <a href="" className="LinkText">HEB | ENG</a>
+                            </div>
+                        </Animated>
                     </div>
-                <div className="LinkHolder">
-                    <Link to="/" className="LinkText">HOME</Link>
-                </div>
-                <div className="LinkHolder">
-                    <Link to="/services" className="LinkText">SERVICES</Link>
-                </div>
-                <div className="LinkHolder">
-                    <Link to="/products" className="LinkText">PRODUCTS</Link>
-                </div>
-                <div className="LinkHolder">
-                    <Link to="/about" className="LinkText">ABOUT</Link>
-                </div>
-                <div className="LinkHolder">
-                    <Link to="/contact" className="LinkText">CONTACT</Link>
-                </div>
-                <div className="LanguageHolder">
-                    <a href="" className="LinkText">HEB | ENG</a>
-                </div>
+                    :
+                    <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
+
+                        <div onClick={this.scrolDown} className="mouse_wave">
+
+                            <p>Please</p>
+                            <p>Scroll</p>
+                            <p>Down</p>
+                            <span className="scroll_arrows one"></span>
+                            <span className="scroll_arrows two"></span>
+                            <span className="scroll_arrows three"></span>
+                        </div>
+                    </Animated>
+
+                }
 
             </div>
         );

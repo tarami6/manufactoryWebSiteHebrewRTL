@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+
+// functions
+import {scrollUp} from '../functions/functions'
+
 // Images
 import PerfectProducts from "../../assets/img/PerfectProducts.png";
 import Vi from "../../assets/video/Products.mp4";
@@ -6,15 +10,34 @@ import Vi from "../../assets/video/Products.mp4";
 
 // Animations
 import {Animated} from "react-animated-css";
-import {Element} from "react-scroll/modules";
 import Services from "../../assets/img/Services.jpg";
 import Product from "../../assets/img/Products.jpg";
 
 
 class Products extends Component {
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
+    async componentDidMount() {
+        this.props.changeScrollState(false, 'products')
+        await scrollUp()
+        await this.scrollEvent()
+    }
+
+    scrollEvent(){
+        if(!this.props.state.menuScrolled && window.pageYOffset == 0 ){
+            window.addEventListener('scroll',this.chageParentSate )
+        }
+    }
+
+    chageParentSate = () =>{
+        if (window.pageYOffset !== 0) {
+            this.props.changeScrollState(true, 'products')
+            window.removeEventListener('scroll', this.chageParentSate)
+        }
+    }
+
+    componentWillUnmount() {
+        console.log("unmount")
+        this.props.changeScrollState(false, 'products')
     }
 
     render() {

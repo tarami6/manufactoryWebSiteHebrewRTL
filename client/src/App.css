@@ -1,42 +1,59 @@
 /*App*/
-.AppContainer{
+body {
+    background-color: #e05627;;
+}
+
+.AppContainer {
     width: 100%;
 
 }
 
-.AppRow{
+.AppRow {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.NavHolder{
+
+.NavHolder {
     width: 10%;
     z-index: 1;
     height: 100vh;
     background-color: #fff;
 }
-.ColPageHolder{
+
+.ColPageHolder {
     width: 90%;
     overflow: hidden;
 }
+.LocationIcon{
+    cursor: pointer;
+}
+
 /*MainMenu*/
-.ContainerHolder{
+.MenuHolder{
+    display: none;
+}
+.ContainerHolder {
+    height: 100vh;
     width: 10%;
     position: fixed;
     border-right: 1px solid #dad7d7;
     background-color: #fff;
 }
-.LogoHolder{
+
+.LogoHolder {
     width: 100%;
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.LogoImage{
+
+.LogoImage {
     height: 80%;
 }
-.LinkHolder{
+
+.LinkHolder {
     width: 100%;
     height: 14vh;
     display: flex;
@@ -44,7 +61,8 @@
     justify-content: center;
     border-top: 1px solid #dad7d7;
 }
-.LanguageHolder{
+
+.LanguageHolder {
     width: 100%;
     height: 5vh;
     display: flex;
@@ -52,29 +70,46 @@
     justify-content: center;
     border-top: 1px solid #dad7d7;
 }
-.LinkText{
+
+.LinkText {
     color: gray;
 }
+.LinkText:hover{
+    color: #404041;
+    text-decoration: none;
+}
+.CurrentPageLinkHolder{
+    background-color: #e75024;
+}
+.CurrentPageLinkText{
+    color: #fff;
+}
+
 /*HOME PAGE*/
-.PageHolder{
+.PageHolder {
     width: 100%;
 }
-.FirstContainer{
+
+.FirstContainer {
     width: 100%;
     height: 100vh;
     background-image: url("./assets/img/ElectricalFactory.jpg");
     background-repeat: no-repeat;
     overflow: hidden;
+    background-size: 100% 100vh;
 }
-.ImageHolder01{
+
+.ImageHolder01 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.Image01{
+
+.Image01 {
     height: 100vh;
 }
-.ContentHolder01{
+
+.ContentHolder01 {
     background-color: #f1f2f2;
     display: flex;
     align-items: center;
@@ -82,26 +117,32 @@
     flex-direction: column;
     padding: 15vh;
 }
-.Title01{
+
+.Title01 {
 }
-.TextHolder{
+
+.TextHolder {
     padding: 0 150px;
 }
-.TextHolderOrange{
+
+.TextHolderOrange {
     color: #D64E25;
     padding: 0 150px;
 }
-.FutureContainer{
+
+.FutureContainer {
     width: 100%;
     height: 80vh;
     background-image: url("./assets/img/Industry-4_banner.jpg");
     background-repeat: no-repeat;
+    background-size: 100% 80vh;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
-.ContentHolder02{
+
+.ContentHolder02 {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -109,16 +150,19 @@
     width: 50%;
     flex-direction: column;
 }
-.TextHolder01{
+
+.TextHolder01 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .TextHolder01 > h2 {
     font-size: 3rem;
     color: #fff;
 }
+
 .TextHolder01 > span {
     color: #fff;
     font-size: 5.2rem;
@@ -127,71 +171,88 @@
     justify-content: center;
     line-height: 75px;
 }
-.ButtonHolder{
+
+.ButtonHolder {
     margin-top: 50px
 }
-.ContactUs{
-    margin-right: 2vw ;
+
+.ContactUs {
+    margin-right: 2vw;
     background-color: #202020;
     border: 0;
     color: #fff;
     padding: 10px 25px;
     border-radius: 25px;
 }
-.ReadHistory{
+
+.ReadHistory {
     background-color: #e75023;
     border: 0;
     color: #fff;
     padding: 10px 25px;
     border-radius: 25px;
 }
-.ProductsAndServiceConatainer{
+
+.ProductsAndServiceConatainer {
     width: 100%;
     background-color: #f1f2f2;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
+
 .ServicesHolder {
     height: 50%;
     display: flex;
+    padding-top: 5vh;
+
 }
-.ProductsHolder{
+
+.ProductsHolder {
     height: 50%;
     display: flex;
+    padding-top: 5vh;
+
 }
-.ImageHolder02{
+
+.ImageHolder02 {
     height: 100%;
     width: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.ContentHolder03{
+
+.ContentHolder03 {
     width: 50%;
     padding: 0px 16% 0px 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.ContentHolder04{
+
+.ContentHolder04 {
     width: 50%;
     padding: 0px 5% 0px 16%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.ContentHolder03 > button, .ContentHolder04 > button{
+
+.ContentHolder03 > button, .ContentHolder04 > button {
     background-color: #202020;
     border: 0;
     color: #fff;
     padding: 10px 15px;
     border-radius: 25px;
-    width: 8vw;
+    width: 150px;
 }
-.Image03{
+
+.Image03 {
     height: 100%;
+    width: 70%;
 }
-.ImageHolder03{
+
+.ImageHolder03 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -201,27 +262,32 @@
 
 
 /*Footer*/
-.FooterContainer{
+.FooterContainer {
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content: center;
+    background-color: #fff;
 }
-.Col12{
+
+.Col12 {
     width: 25%;
     height: 100%;
 }
-.ImageHolder04{
+
+.ImageHolder04 {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Image04{
+
+.Image04 {
     height: 70%;
 }
-.ContentHolder05{
+
+.ContentHolder05 {
     height: 100%;
     width: 100%;
     height: 100%;
@@ -230,29 +296,35 @@
     flex-direction: column;
     margin-top: 15%;
 }
+
 .ContentHolder05 > h3 {
     font-size: 24px;
     color: #e75023;
 }
-.ContentHolder05 > div >ul {
+
+.ContentHolder05 > div > ul {
     margin-top: 3vh;
     margin-bottom: 5vh;
     padding: 0 !important;
     padding-left: 20px !important;
     color: #e75023;
 }
-.ContentHolder05 > div> ul > li > p {
+
+.ContentHolder05 > div > ul > li > p {
     color: #58595b;
 }
-.TimeIcon{
+
+.TimeIcon {
     color: #e75023;
     margin-bottom: 2px;
     font-size: 20px;
 }
-.TimingText, .ContactTextFirst{
+
+.TimingText, .ContactTextFirst {
     margin-top: 3vh;
 }
-.ContentHolder06{
+
+.ContentHolder06 {
     width: 80%;
     height: 40vh;
     display: flex;
@@ -261,38 +333,43 @@
 
 /* The only rule that matters */
 
-.OnVideo{
-   width: 90vw;
+.OnVideo {
+    width: 90vw;
 
 }
 
-.Video01{
-    width: 100%;
+.Video01 {
     position: absolute;
     left: 0%;
     z-index: -100;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
-.ImageHolder05{
+
+.ImageHolder05 {
     width: 90vw;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
 }
-.Image02{
+
+.Image02 {
     height: 100vh;
 }
-.ContentHolder07{
+
+.ContentHolder07 {
 }
-.Submenu{
+
+.Submenu {
     height: 10vh;
     width: 100%;
     background-color: #fff;
     display: flex;
     padding: 0 10%;
 }
-.MenuItem{
+
+.MenuItem {
     height: 100%;
     width: 33%;
     display: flex;
@@ -300,69 +377,81 @@
     justify-content: center;
     cursor: pointer;
 }
-.ContentHolder08{
+
+.ContentHolder08 {
     width: 100%;
     background-color: #F1F2F2;
 }
-.FirstContent{
-    padding: 10vh 30%;
+
+.FirstContent {
+    padding: 10vh 20%;
 }
-.FirstContent > h1, .SecondContent> h1, .ThirdContent> h1 {
+
+.FirstContent > h1, .SecondContent > h1, .ThirdContent > h1 {
     text-align: center;
 }
-.SecondContent{
+
+.SecondContent {
     background-image: url("./assets/img/TextBacground01.jpg");
     width: 100%;
-    padding: 10vh 30%;
+    padding: 10vh 20%;
     color: #fff;
 }
-.ThirdContent{
+
+.ThirdContent {
     background-image: url("./assets/img/TextBackground02.jpg");
     width: 100%;
-    padding: 10vh 30%;
+    padding: 10vh 20%;
     color: #fff;
 }
 
 /*//Contact Page*/
 
-.FutureContainer01{
+.FutureContainer01 {
     width: 100%;
     height: 60vh;
     background-image: url("./assets/img/ContactBackGtround.jpg");
     background-repeat: no-repeat;
+    background-size: 100% 60vh;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
-.IconHolder{
+
+.IconHolder {
     width: 100%;
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
-.Icon1{
+
+.Icon1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .Icon1 > h3 {
     color: #fff;
 }
-.Icon1 > p  {
+
+.Icon1 > a {
     text-align: center;
     color: #fff;
     font-size: 22px;
 }
-.Icon1 > img {
+
+.Icon1 > img, .Icon1 > a>  img {
     width: 20vh;
     height: 20vh;
 }
 
+
 /*About*/
-.ImageHolder07{
+.ImageHolder07 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -370,7 +459,8 @@
     justify-content: flex-end;
     padding: 5vh;
 }
-.ImageHolder06{
+
+.ImageHolder06 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -381,3 +471,415 @@
 }
 
 
+/*Media Query*/
+@media only screen and (min-width: 1201px) and (max-width: 1201px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .FirstContent, .SecondContent, .ThirdContent {
+        padding: 10vh 15%;
+    }
+
+    .ContentHolder03 {
+        padding: 0px 5% 0px 5%;
+    }
+
+    .Image03 {
+        width: 85%;
+    }
+
+    .ProductsHolder, .ServicesHolder {
+        padding-top: 5vh;
+    }
+
+    .FooterContainer {
+        height: 60vh;
+    }
+
+    .TextHolderOrange, .TextHolder {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .FooterContainer {
+        height: 80vh;
+    }
+
+    .TextHolderOrange {
+        padding: 0;
+    }
+
+    .ContentHolder04 {
+        padding: 0px 5% 0px 5%;
+    }
+
+    .LinkText {
+        color: gray;
+        font-size: 12px;
+    }
+
+    .LogoImage {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .ColPageHolder {
+        width: 100vw;
+    }
+
+    .ContentHolder02 {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .NavHolder {
+        display: none;
+    }
+
+    .OnVideo {
+        width: 100vw;
+    }
+
+    .Image02 {
+        height: 25vh;
+    }
+
+    .ImageHolder05 {
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .FirstContainer {
+        height: 25vh;
+        background-size: 100% 25vh;
+    }
+
+    .Image01 {
+        height: 25vh;
+    }
+
+    .ContentHolder01 {
+        padding: 3vh;
+    }
+
+    .FutureContainer {
+        height: 30vh;
+        background-size: 100% 30vh;
+    }
+
+    .TextHolder01 > h2 {
+        font-size: 2rem;
+    }
+
+    .TextHolder01 > span {
+        font-size: 3.5rem;
+    }
+
+    .ContentHolder02 {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .ServicesHolder {
+        flex-direction: column;
+    }
+
+    .parallax-inner {
+        transform: initial !important;
+    }
+
+    .ProductsHolder, .ServicesHolder {
+        padding-top: 0px;
+    }
+
+    .ProductsAndServiceConatainer {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .Image03 {
+        width: 90%;
+    }
+
+    .ImageHolder02, .ImageHolder03 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ContentHolder03, .ContentHolder04 {
+        width: 100%;
+        padding: 0px 5% 20% 5%;
+    }
+
+    .ButtonHolder {
+        margin-top: 20px;
+    }
+
+    .ProductsHolder {
+        flex-direction: column-reverse;
+    }
+
+    .FooterContainer {
+        height: 100vh;
+    }
+
+    .ContentHolder06 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 3vh 5vw 0 5vw
+    }
+
+    .Col12 {
+        width: 100%;
+        height: 25%;
+        padding-top: 5%;
+    }
+
+    .ContentHolder05 {
+        margin: 0px;
+    }
+
+    .ContactTextFirst {
+        margin-top: 0px;
+    }
+
+    .Col12:nth-child(4) {
+        height: 30%;
+    }
+
+    .Col12:nth-child(3) {
+        height: 15%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .ImageHolder04 {
+        margin-top: 5%;
+    }
+
+    .MobileMenuLogoHolder {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MobilelLogo {
+        height: 20vh;
+    }
+
+    .OnVideo > .ProductsAndServiceConatainer > .ServicesHolder {
+        flex-direction: column-reverse;
+    }
+    .OnVideo > .ProductsAndServiceConatainer > .ProductsHolder{
+        flex-direction: column;
+    }
+    .ContentHolder03, .ContentHolder04 {
+        width: 100%;
+        padding: 0px 5% 0% 5%;
+    }
+    .ImageHolder07, .ImageHolder06{
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 10vh;
+    }
+    .Image03 {
+        width: 100%;
+    }
+    .FirstContent, .SecondContent, .ThirdContent {
+        padding: 5%;
+    }
+    .FutureContainer01 {
+        height: 100vh;
+        background-size: 100% 100vh;
+
+    }
+    .IconHolder {
+        flex-direction: column;
+        padding: 3vh;
+    }
+    .Icon1 > img, .Icon1 > a>  img {
+        width: 15vh;
+        height: 15vh;
+    }
+
+
+    /*MobileMenu*/
+    #flyoutMenu {
+        width: 100vw;
+        height: 100vh;
+        background-color: #e75023;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: transform .3s cubic-bezier(0, .52, 0, 1);
+        overflow: scroll;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flyoutMenu.hide {
+        transform: translate3d(-100vw, 0, 0);
+    }
+
+    #flyoutMenu.show {
+        transform: translate3d(0vw, 0, 0);
+        overflow: hidden;
+    }
+
+    #flyoutMenu h2 a {
+        color: #333;
+        margin-left: 15px;
+        text-decoration: none;
+    }
+
+    #flyoutMenu h2 a:hover {
+        text-decoration: underline;
+    }
+
+    .MenuHolder {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding-bottom: 3vh;
+    }
+
+    .MenuBtn {
+        background-color: #fff;
+        border: 0;
+    }
+
+    .HamburgerIcon {
+        color: #e75023;
+        margin-bottom: 2px;
+        font-size: 30px;
+    }
+
+    .CloseIconHolder {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .CloseIcon {
+        color: #fff;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+
+    .LinkTextMobile {
+        font-size: 30px;
+        color: #fff;
+        padding: 3vh;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
+}
+
+/*animation*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.mouse_wave > p:nth-child(1),.mouse_wave > p:nth-child(2) {
+    color: lightgray;
+}
+.mouse_wave > p:nth-child(3){
+    color: #E75024;
+}
+.mouse_wave {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 100%;
+    cursor: pointer;
+}
+.scroll_arrows
+{
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+
+    border-right: 2px solid #E75024;
+    border-bottom: 2px solid #E75024;
+    width: 16px;
+    height: 16px;
+}
+.one
+{
+    margin-top: 1px;
+}
+.one, .two, .three
+{
+    -webkit-animation: mouse-wave 1s infinite;
+    -moz-animation: mouse-wave 1s infinite;
+}
+.one
+{
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+}
+
+.two
+{
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    margin-top: -6px;
+}
+
+.three
+{
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+    margin-top: -6px;
+}
+
+
+@-webkit-keyframes mouse-wave {
+
+    0%   { opacity: 0;}
+    50%  { opacity: .5;}
+    100% { opacity: 1;}
+}
+@-moz-keyframes mouse-wave {
+
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+}
+@-o-keyframes mouse-wave {
+
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+}
+@keyframes mouse-wave {
+
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+}

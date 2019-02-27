@@ -1,4 +1,9 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
+
+
+// functions
+import {scrollUp} from '../functions/functions'
 // Images
 import Years from "../../assets/img/90Years.png";
 import Services from "../../assets/img/Services.jpg";
@@ -9,9 +14,32 @@ import {Animated} from "react-animated-css";
 import {Parallax} from 'react-scroll-parallax';
 
 class HomePage extends Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
+
+    async componentDidMount() {
+        this.props.changeScrollState(false, 'home')
+        await scrollUp()
+        await this.scrollEvent()
     }
+
+    scrollEvent() {
+        if (!this.props.state.menuScrolled && window.pageYOffset == 0) {
+            window.addEventListener('scroll', this.chageParentSate)
+        }
+    }
+
+    chageParentSate = () => {
+        if (window.pageYOffset !== 0) {
+            this.props.changeScrollState(true, 'home')
+            window.removeEventListener('scroll', this.chageParentSate)
+        }
+    }
+
+    componentWillUnmount() {
+        console.log("unmount")
+        this.props.changeScrollState(false, 'home')
+    }
+
+
     render() {
         return (
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
@@ -59,8 +87,12 @@ class HomePage extends Component {
                                 <span>Industry 4.0</span>
                             </div>
                             <div className="ButtonHolder">
-                                <button className="ContactUs">Contact Us</button>
-                                <button className="ReadHistory">Read Our History</button>
+                                <Link to="/contact">
+                                    <button className="ContactUs">Contact Us</button>
+                                </Link>
+                                <Link to="/about">
+                                    <button className="ReadHistory">Read Our History</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -72,18 +104,29 @@ class HomePage extends Component {
                             <div className="ContentHolder03">
                                 <h1>Our Service</h1>
                                 <p>
-                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book. It usually begins with
                                 </p>
-                                <button className="ContactUs">Raed More</button>
+                                <Link to="/services">
+                                    <button className="ContactUs">Raed More</button>
+                                </Link>
                             </div>
                         </div>
                         <div className="ProductsHolder">
                             <div className="ContentHolder04">
                                 <h1>Our Products</h1>
                                 <p>
-                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
+                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
+                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                    Bonorum et Malorum for use in a type specimen book. It usually begins with
                                 </p>
-                                <button className="ContactUs">Raed More</button>
+                                <Link to="/products">
+                                    <button className="ContactUs">Raed More</button>
+                                </Link>
+
                             </div>
                             <div className="ImageHolder03">
                                 <img src={Products} className="Image03" alt=""/>

@@ -6,18 +6,33 @@ import Vi from "../../assets/video/PlasticInjection.mp4";
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 // Animations
 import {Animated} from "react-animated-css";
+import {scrollUp} from "../functions/functions";
 // import {Parallax} from 'react-scroll-parallax';
 
 class Services extends Component {
-    constructor(props) {
-        super(props)
-        this.myRef1 = React.createRef()   // Create a ref object
-        this.myRef2 = React.createRef()
-        this.myRef3 = React.createRef()
+
+    async componentDidMount() {
+        this.props.changeScrollState(false, 'services')
+        await scrollUp()
+        await this.scrollEvent()
     }
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
+    scrollEvent(){
+        if(!this.props.state.menuScrolled && window.pageYOffset == 0 ){
+            window.addEventListener('scroll',this.chageParentSate )
+        }
+    }
+
+    chageParentSate = () =>{
+        if (window.pageYOffset !== 0) {
+            this.props.changeScrollState(true, 'services')
+            window.removeEventListener('scroll', this.chageParentSate)
+        }
+    }
+
+    componentWillUnmount() {
+        console.log("unmount")
+        this.props.changeScrollState(false, 'services')
     }
 
     scrollToMyRef = (ref) =>  ref.current.scrollIntoView({behavior: 'smooth',block: "nearest", inline :'nearest'})

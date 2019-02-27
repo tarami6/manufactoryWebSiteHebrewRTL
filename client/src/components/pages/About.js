@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+
+
+// functions
+import {scrollUp} from '../functions/functions'
 // Images
 import Century from "../../assets/img/Century.png";
 import Vi from "../../assets/video/About.mp4";
@@ -18,12 +22,45 @@ import Img2025 from "../../assets/img/2025.jpg";
 
 class About extends Component {
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
+
+
+    async componentDidMount() {
+        this.props.changeScrollState(false, 'about')
+        await scrollUp()
+        await this.scrollEvent()
+    }
+    componentWillReceiveProps(nextProps){
+        console.log("scroll2",nextProps )
+    }
+
+    scrollEvent(){
+        console.log("scroll",this.props.state.menuScrolled )
+        if(!this.props.state.menuScrolled && window.pageYOffset == 0 ){
+            window.addEventListener('scroll',this.chageParentSate )
+        }
+    }
+
+    chageParentSate = () =>{
+        console.log("34")
+        if (window.pageYOffset !== 0) {
+            this.props.changeScrollState(true, 'about')
+            window.removeEventListener('scroll',this.chageParentSate )
+        }
+
+    }
+    componentWillUnmount() {
+        console.log("unmount")
+        this.props.changeScrollState(false, 'about')
     }
 
 
+
+
+
+
+
     render() {
+        console.log("props", this.props.state)
         return (
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
 
@@ -44,9 +81,13 @@ class About extends Component {
                                         <img src={Img1927} className="Image03" alt=""/>
                                     </div>
                                     <div className="ContentHolder03">
-                                        <h1>1972</h1>
+                                        <h1>1927</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                 </div>
@@ -54,7 +95,11 @@ class About extends Component {
                                     <div className="ContentHolder04">
                                         <h1>1975</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">
@@ -70,7 +115,11 @@ class About extends Component {
                                     <div className="ContentHolder03">
                                         <h1>1990</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                 </div>
@@ -78,7 +127,11 @@ class About extends Component {
                                     <div className="ContentHolder04">
                                         <h1>2009</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">
@@ -93,7 +146,11 @@ class About extends Component {
                                     <div className="ContentHolder03">
                                         <h1>2019</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                 </div>
@@ -101,7 +158,11 @@ class About extends Component {
                                     <div className="ContentHolder04">
                                         <h1>2025</h1>
                                         <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+                                            laying out print, graphic or web designs. The passage is attributed to an
+                                            unknown typesetter in the 15th century who is thought to have scrambled
+                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+                                            book. It usually begins with
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">

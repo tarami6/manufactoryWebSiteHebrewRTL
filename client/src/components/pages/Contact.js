@@ -8,17 +8,48 @@ import CallIcon from "../../assets/img/CallIcon.png";
 import MailIcon from "../../assets/img/MailIcon.png";
 
 
+
 // Animations
 import {Animated} from "react-animated-css";
+import {scrollUp} from "../functions/functions";
 
 
 
 // import {Parallax} from 'react-scroll-parallax';
 
 class Contact extends Component {
+     mapsSelector =()=> {
+        if /* if we're on iOS, open in Apple Maps */
+        ((navigator.platform.indexOf("iPhone") != -1) ||
+            (navigator.platform.indexOf("iPad") != -1) ||
+            (navigator.platform.indexOf("iPod") != -1))
+            window.open("maps://maps.google.com/maps?daddr=32.923277,35.312480&amp;ll=");
+        else /* else use Google */
+            window.open("https://maps.google.com/maps?daddr=32.923277,35.312480&amp;ll=");
+    }
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
+    async componentDidMount() {
+        this.props.changeScrollState(false, 'contact')
+        await scrollUp()
+        await this.scrollEvent()
+    }
+
+    scrollEvent(){
+        if(!this.props.state.menuScrolled && window.pageYOffset == 0 ){
+            window.addEventListener('scroll',this.chageParentSate )
+        }
+    }
+
+    chageParentSate = () =>{
+        if (window.pageYOffset !== 0) {
+            this.props.changeScrollState(true, 'contact')
+            window.removeEventListener('scroll', this.chageParentSate)
+        }
+    }
+
+    componentWillUnmount() {
+        console.log("unmount")
+        this.props.changeScrollState(false, 'contact')
     }
 
 
@@ -40,20 +71,27 @@ class Contact extends Component {
                             <div className="FutureContainer01">
                                 <div className="IconHolder">
                                     <div className="Icon1">
-                                        <img src={LocationIcon} alt=""/>
-                                        <h3>Address</h3>
-                                        <p>Hamagal - 12 Karmiel Israel</p>
+                                            <img className="LocationIcon" onClick={this.mapsSelector} src={LocationIcon} alt=""/>
+                                            <h3>Address</h3>
+                                            <a href="">Hamagal - 12 Karmiel Israel</a>
                                     </div>
                                     <div className="Icon1">
+                                        <a href="tel:04-8660523">
                                         <img src={CallIcon} alt=""/>
                                         <h3>Phone</h3>
                                         <p>04-8660523</p>
+                                        </a>
 
                                     </div>
                                     <div className="Icon1">
+                                        <a href="mailto:Atec@bezeqint.net">
+
+
                                         <img src={MailIcon} alt=""/>
                                         <h3>Email</h3>
-                                        <p>Atec@bezeqint.net</p>
+                                        <a style={{color:'#fff'}}  href="mailto:Atec@bezeqint.net">Email us
+                                        </a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

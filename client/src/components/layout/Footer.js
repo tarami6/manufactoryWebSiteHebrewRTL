@@ -7,6 +7,15 @@ import Email from 'react-icons/lib/md/email';
 
 
 class Footer extends Component {
+    mapsSelector =()=> {
+        if /* if we're on iOS, open in Apple Maps */
+        ((navigator.platform.indexOf("iPhone") != -1) ||
+            (navigator.platform.indexOf("iPad") != -1) ||
+            (navigator.platform.indexOf("iPod") != -1))
+            window.open("maps://maps.google.com/maps?daddr=32.923277,35.312480&amp;ll=");
+        else /* else use Google */
+            window.open("https://maps.google.com/maps?daddr=32.923277,35.312480&amp;ll=");
+    }
     render() {
         return (
             <div className="FooterContainer">
@@ -38,11 +47,12 @@ class Footer extends Component {
                     <div className="Col12">
                         <div className="ContentHolder05">
                             <h3>Contact</h3>
-                            <p className="ContactTextFirst"><Location className="TimeIcon"/> Hamagal-12 Karmiel Israel
+                            <p className="ContactTextFirst" onClick={this.mapsSelector} ><Location className="TimeIcon"/> <a href="">Hamagal-12 Karmiel Israel</a>
                             </p>
-                            <p className=""><Phone className="TimeIcon"/> 04-8660523</p>
-                            <p className=""><Phone className="TimeIcon"/> 04-8620254 </p>
-                            <p className=""><Email className="TimeIcon"/> Atec@bezeqint.net </p>
+                            <p className=""><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8660523</a></p>
+                            <p className=""><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8620254</a> </p>
+                            <p className=""><Email className="TimeIcon"/> <a href='mailto:Atec@bezeqint.net'>Email us
+                            </a> </p>
 
                         </div>
                     </div>
