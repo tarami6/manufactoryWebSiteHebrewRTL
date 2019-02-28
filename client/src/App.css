@@ -539,6 +539,9 @@ body {
 }
 
 @media only screen and (max-width: 720px) {
+    .Video01{
+        display: none;
+    }
 
     .NavHolder {
         display: none;
@@ -555,6 +558,7 @@ body {
     .ImageHolder05 {
         width: 100vw;
         height: 25vh;
+        display: none;
     }
 
     .FirstContainer {
