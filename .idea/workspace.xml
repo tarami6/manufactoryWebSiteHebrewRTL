@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc007e9-2941-4db6-b76e-a2f265e00289" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,14 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.81463414">
+    <splitter split-orientation="horizontal" split-proportion="0.5066922">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+                <state relative-caret-position="347">
+                  <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                     <element signature="e#130#174#0" expanded="true" />
@@ -76,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="562">
-                  <caret line="560" column="22" selection-start-line="560" selection-start-column="22" selection-end-line="560" selection-end-column="22" />
+                  <caret line="566" column="22" selection-start-line="566" selection-start-column="22" selection-end-line="566" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -133,8 +133,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                <state relative-caret-position="122">
+                  <caret line="913" column="21" lean-forward="true" selection-start-line="913" selection-start-column="21" selection-end-line="913" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -175,6 +175,8 @@
       <find>IconHolder</find>
       <find>ContentHolder01</find>
       <find>NavHolder</find>
+      <find>ContainerHolder</find>
+      <find>.cs-loader-inner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,7 +192,6 @@
         <option value="$PROJECT_DIR$/client/src/components/layout/MobileMenu.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/Footer.js" />
         <option value="$PROJECT_DIR$/client/src/components/functions/functions.js" />
-        <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/Contact.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/Products.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/About.js" />
@@ -201,6 +202,7 @@
         <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/src/components/layout/MainMenu.js" />
         <option value="$PROJECT_DIR$/client/src/App.css" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
       </list>
     </option>
   </component>
@@ -325,12 +327,12 @@
       <workItem from="1551076420987" duration="2826000" />
       <workItem from="1551080858458" duration="55770000" />
       <workItem from="1551278239179" duration="12948000" />
-      <workItem from="1551293020229" duration="2656000" />
+      <workItem from="1551293020229" duration="3606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133314000" />
+    <option name="totallyTimeSpent" value="134264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -426,17 +428,6 @@
     <entry file="file://$PROJECT_DIR$/client/node_modules/.bin/webpack">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#130#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/pages/Services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -510,7 +501,18 @@
     <entry file="file://$PROJECT_DIR$/client/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
-          <caret line="560" column="22" selection-start-line="560" selection-start-column="22" selection-end-line="560" selection-end-column="22" />
+          <caret line="566" column="22" selection-start-line="566" selection-start-column="22" selection-end-line="566" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#130#174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

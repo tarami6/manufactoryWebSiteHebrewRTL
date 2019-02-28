@@ -40,7 +40,7 @@ class App extends Component {
     componentWillMount() {
         setTimeout(() => this.setState({
             loading: false
-        }), 500);
+        }), 1000);
     }
 
     render() {
@@ -78,7 +78,18 @@ class App extends Component {
                 </Router>
             );
         } else {
-            return (<div>Loading</div>)
+            return (<div className="LoaderHolder">
+                <div className="cs-loader">
+                    <div className="cs-loader-inner">
+                        <label> ●</label>
+                        <label> ●</label>
+                        <label> ●</label>
+                        <label> ●</label>
+                        <label> ●</label>
+                        <label> ●</label>
+                    </div>
+                </div>
+            </div>)
         }
     }
 }
