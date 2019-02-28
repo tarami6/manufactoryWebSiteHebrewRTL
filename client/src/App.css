@@ -16,7 +16,7 @@ body {
 
 .NavHolder {
     width: 10%;
-    z-index: 0;
+    z-index: 1;
     height: 100vh;
 }
 
@@ -38,6 +38,7 @@ body {
     position: fixed;
     border-right: 1px solid #dad7d7;
     background-color: #fff;
+    z-index: 2;
 }
 
 .LogoHolder {
@@ -110,7 +111,7 @@ body {
 
 .ContentHolder01 {
     background-color: #f1f2f2;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -118,6 +119,7 @@ body {
 }
 
 .Title01 {
+    text-align: center;
 }
 
 .TextHolder {
@@ -423,7 +425,7 @@ body {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .Icon1 {

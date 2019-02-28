@@ -3,6 +3,9 @@ import {Link} from "react-router-dom";
 import Logo from '../../assets/img/largeLogo.png';
 import {Animated} from "react-animated-css";
 import classnames from 'classname';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 class MainMenu extends Component {
     constructor(props) {
@@ -96,9 +99,7 @@ class MainMenu extends Component {
 
                                 <p>Please</p>
                                 <p>Scroll</p>
-                                <div onClick={this.scrolDown} >
                                 <p>Down</p>
-                                </div>
                                 <span className="scroll_arrows one"></span>
                                 <span className="scroll_arrows two"></span>
                                 <span className="scroll_arrows three"></span>
