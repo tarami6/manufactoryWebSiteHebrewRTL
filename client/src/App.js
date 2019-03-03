@@ -54,10 +54,7 @@ class App extends Component {
                             <div className="AppContainer">
                                 <div className="AppRow">
 
-                                    <div className="NavHolder">
-                                        <MainMenu state={this.state}
-                                        />
-                                    </div>
+
                                     <div className="ColPageHolder">
                                         <MobileMenu/>
                                         <Route exact path="/" render={() => <HomePage state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
@@ -69,6 +66,10 @@ class App extends Component {
                                                render={() => <About state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
                                         <Route exact path="/contact"  render={() => <Contact state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
                                         <Footer/>
+                                    </div>
+                                    <div className="NavHolder">
+                                        <MainMenu state={this.state}
+                                        />
                                     </div>
 
                                 </div>

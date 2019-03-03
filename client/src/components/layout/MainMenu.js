@@ -52,7 +52,7 @@ class MainMenu extends Component {
                                     <Link to="/"
                                           className={classnames('LinkText',
                                               {'CurrentPageLinkText': this.state.currentPage === 'home'})}
-                                    >HOME</Link>
+                                    >ראשי</Link>
                                 </div>
 
                                 <div className={classnames('LinkHolder',
@@ -60,7 +60,7 @@ class MainMenu extends Component {
                                 >
                                     <Link to="/services" className={classnames('LinkText',
                                         {'CurrentPageLinkText': this.state.currentPage === 'services'})}
-                                    >SERVICES</Link>
+                                    >שירותים</Link>
                                 </div>
 
                                 <div className={classnames('LinkHolder',
@@ -68,7 +68,7 @@ class MainMenu extends Component {
                                 >
                                     <Link to="/products" className={classnames('LinkText',
                                         {'CurrentPageLinkText': this.state.currentPage === 'products'})}
-                                    >PRODUCTS</Link>
+                                    >מוצרים</Link>
                                 </div>
 
                                 <div className={classnames('LinkHolder',
@@ -76,7 +76,7 @@ class MainMenu extends Component {
                                 >
                                     <Link to="/about" className={classnames('LinkText',
                                         {'CurrentPageLinkText': this.state.currentPage === 'about'})}
-                                    >ABOUT</Link>
+                                    >אודות</Link>
                                 </div>
 
                                 <div className={classnames('LinkHolder',
@@ -84,7 +84,7 @@ class MainMenu extends Component {
                                 >
                                     <Link to="/contact" className={classnames('LinkText',
                                         {'CurrentPageLinkText': this.state.currentPage === 'contact'})}
-                                    >CONTACT</Link>
+                                    >צור קשר</Link>
                                 </div>
                                 <div className="LanguageHolder">
                                     <a href="" className="LinkText">HEB | ENG</a>
@@ -97,9 +97,9 @@ class MainMenu extends Component {
 
                             <div onClick={this.scrolDown} className="mouse_wave">
 
-                                <p>Please</p>
-                                <p>Scroll</p>
-                                <p>Down</p>
+                                <p>בבקשה</p>
+                                <p>לגלול</p>
+                                <p>למטה</p>
                                 <span className="scroll_arrows one"></span>
                                 <span className="scroll_arrows two"></span>
                                 <span className="scroll_arrows three"></span>

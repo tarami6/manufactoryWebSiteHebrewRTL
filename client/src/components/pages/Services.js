@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // Images
-import Customers from "../../assets/img/Customers.png";
+import Customers from "../../assets/img/CustomersHeb.png";
 import Vi from "../../assets/video/PlasticInjection.mp4";
 
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'

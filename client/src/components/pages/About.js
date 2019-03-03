@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 // functions
 import {scrollUp} from '../functions/functions'
 // Images
-import Century from "../../assets/img/Century.png";
+import Century from "../../assets/img/CenturyHeb.png";
 import Vi from "../../assets/video/About.mp4";
 
 // Animations

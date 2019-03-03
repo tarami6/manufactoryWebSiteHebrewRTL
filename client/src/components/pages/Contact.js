@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // Images
-import Smile from "../../assets/img/Smile.png";
+import Smile from "../../assets/img/SmileHeb.png";
 import Vi from "../../assets/video/Contact.mp4";
 
 import LocationIcon from "../../assets/img/LocationIcon.png";
