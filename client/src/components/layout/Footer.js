@@ -27,11 +27,11 @@ class Footer extends Component {
                     </div>
                     <div className="Col12">
                         <div className="ContentHolder05">
-                            <h3>Buisness Details</h3>
+                            <h3 className="rtlText">מידע עסקי</h3>
                             <div>
                                 <ul>
-                                    <li><p>Akiva Tolochinsky</p></li>
-                                    <li><p>Electrical Contracting constructor</p></li>
+                                    <li><p className="rtlText">עקיבא טולוצ'ינסקי</p></li>
+                                    <li><p className="rtlText">קבלנים לעבודות חשמל בע"ם</p></li>
                                 </ul>
                                 <p>Copyright 2019 All Rights reserves</p>
                             </div>
@@ -40,18 +40,18 @@ class Footer extends Component {
                     </div>
                     <div className="Col12">
                         <div className="ContentHolder05">
-                            <h3>Timing</h3>
-                            <p className="TimingText"><Time className="TimeIcon"/> 17:00 - 18:00</p>
+                            <h3 className="rtlText">שעות פעילות</h3>
+                            <p className="TimingText rtlText"><Time className="TimeIcon"/> 17:00 - 18:00</p>
                         </div>
                     </div>
                     <div className="Col12">
                         <div className="ContentHolder05">
-                            <h3>Contact</h3>
-                            <p className="ContactTextFirst" onClick={this.mapsSelector} ><Location className="TimeIcon"/> <a href="">Hamagal-12 Karmiel Israel</a>
+                            <h3 className="rtlText">צור קשר</h3>
+                            <p className="ContactTextFirst rtlText" onClick={this.mapsSelector} ><Location className="TimeIcon"/><a href="">המגל 12 - כרמיאל</a>
                             </p>
-                            <p className=""><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8660523</a></p>
-                            <p className=""><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8620254</a> </p>
-                            <p className=""><Email className="TimeIcon"/> <a href='mailto:Atec@bezeqint.net'>Email us
+                            <p className="rtlText"><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8660523</a></p>
+                            <p className="rtlText"><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8620254</a> </p>
+                            <p className="rtlText"><Email className="TimeIcon"/> <a href='mailto:Atec@bezeqint.net'>שלח לנו מייל
                             </a> </p>
 
                         </div>

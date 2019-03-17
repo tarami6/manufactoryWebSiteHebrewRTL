@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 // functions
 import {scrollUp} from '../functions/functions'
 // Images
-import Years from "../../assets/img/90YearsHeb.png";
+import Years from "../../assets/img/firstCover.png";
 import Services from "../../assets/img/Services.jpg";
 import Products from "../../assets/img/Products.jpg";
 
@@ -58,40 +58,26 @@ class HomePage extends Component {
                         </div>
                     </div>
                     <div className="ContentHolder01">
-                        <h1 className="Title01">Welcome <span style={{color: '#D64E25'}}>Text Who we are</span></h1>
-                        <p className="TextHolder">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h1 className="Title01 "> <span style={{color: '#D64E25'}}>עקיבא טולוצ'ינסקי</span> קבלנים לעבודות חשמל בע"מ</h1>
+                        <p className="TextHolder rtlText">
+                            חברת עקיבא טולוצ'ינסקי נחשבת לחלוצה בענפי התעשייה המקומיים והבינלאומיים, כשלצידה ניסיון של כמעט מאה שנות פעילות פורצת דרך בתחומי המתכת והפלסטיק ושיתופי הפעולה הפוריים שלה עם חברות-ענק מארץ וממדינות רבות אחרות בעולם.
                         </p>
-                        <p className="TextHolderOrange">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p className="TextHolderOrange rtlText">
+                            את עיקר פעילות החברה מנהלת משפחת טולוצ'ינסקי מהמפעל המתקדם הממוקם בכרמיאל, המעסיק קרוב ל-70 עובדים מישובי הסביבה ומפעיל עשרות מכונות חכמות, העדכניות ביותר מסוגן בכל תחום בו עוסקת החברה.
                         </p>
                     </div>
                     <div className="FutureContainer">
                         <div className="ContentHolder02">
                             <div className="TextHolder01">
-                                <h2>We build our future</h2>
+                                <h2 >We build our future</h2>
                                 <span>Industry 4.0</span>
                             </div>
                             <div className="ButtonHolder">
                                 <Link to="/contact">
-                                    <button className="ContactUs">Contact Us</button>
+                                    <button className="ContactUs">צור קשר</button>
                                 </Link>
                                 <Link to="/about">
-                                    <button className="ReadHistory">Read Our History</button>
+                                    <button className="ReadHistory">קרא על המורשת שלנו</button>
                                 </Link>
                             </div>
                         </div>
@@ -102,29 +88,26 @@ class HomePage extends Component {
                                 <img src={Services} className="Image03" alt=""/>
                             </div>
                             <div className="ContentHolder03">
-                                <h1>Our Service</h1>
-                                <p>
-                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
-                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
-                                    Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                <h1 className="rtlText titleGrey">השירותים שלנו</h1>
+                                <p className="rtlText">
+                                    המפעל שלנו כולל מספר מחלקות שונות העוסקות ממגוון תחומי עיסוק רחב, בהזרקות הפלסטיק ועד לעיבוד שבבי, כולל כל מה שנמצא ביניהם. אנחנו מלווים כל לקוח שלנו, קטן או גדול, משלב התכנון והפיתוח של המוצר הנדרש ועד לשלב יצור המוצר הסופי, מורכב ככל שיהיה. רמתה המקצועית של חברת עקיבא טולוצ'ינסקי מאפשרת לה להבטיח, כי השירות הנלווה למוצר, אף הוא יהיה נרמה הראשונה במעלה.
                                 </p>
                                 <Link to="/services">
-                                    <button className="ContactUs">Raed More</button>
+                                    <button className="ContactUs rtlText">תראו לי עוד...</button>
                                 </Link>
                             </div>
                         </div>
                         <div className="ProductsHolder">
                             <div className="ContentHolder04">
-                                <h1>Our Products</h1>
-                                <p>
-                                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
-                                    print, graphic or web designs. The passage is attributed to an unknown typesetter in
-                                    the 15th century who is thought to have scrambled parts of Cicero's De Finibus
-                                    Bonorum et Malorum for use in a type specimen book. It usually begins with
+                                <h1 className="rtlText titleGrey" >המוצרים שלנו</h1>
+                                <p className="rtlText" >
+                                    במפעלנו שבכרמיאל, אנחנו מייצרים אביזרי חשמל במתח נמוך וציוד-קצה.
+                                    בזכות הניסיון בן עשרות השנים שלנו, אנחנו דוגלים בגישה הוותיקה, עושים שימוש בחומרי הגלם האיכותיים ביותר,
+                                    וכתוצאה מכך, המוצרים שאנחנו מייצרים עמידים יותר מאחרים ומחזיקים עשרות שנים.
+                                    בזכות ניסיון זה ובזכותה של הרמה המקצועית אליה הגענו, ביכולתנו להתמודד גם עם משימות ייצור מורכבות של מוצרים המורכבים ממכלול.
                                 </p>
                                 <Link to="/products">
-                                    <button className="ContactUs">Raed More</button>
+                                    <button className="ContactUs rtlText">תראו לי עוד...</button>
                                 </Link>
 
                             </div>

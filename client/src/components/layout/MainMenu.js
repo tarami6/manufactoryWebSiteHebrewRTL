@@ -4,6 +4,7 @@ import Logo from '../../assets/img/largeLogo.png';
 import {Animated} from "react-animated-css";
 import classnames from 'classname';
 import smoothscroll from 'smoothscroll-polyfill';
+import Usa from "../../assets/img/UsaFlag.jpg";
 
 smoothscroll.polyfill();
 
@@ -87,7 +88,9 @@ class MainMenu extends Component {
                                     >צור קשר</Link>
                                 </div>
                                 <div className="LanguageHolder">
-                                    <a href="" className="LinkText">HEB | ENG</a>
+                                    <a href="" className="LinkText">
+                                        <img src={Usa} width={40} height={20} alt=""/>
+                                    </a>
                                 </div>
                             </Animated>
                         </div>

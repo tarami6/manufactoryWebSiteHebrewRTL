@@ -72,24 +72,22 @@ class Contact extends Component {
                                 <div className="IconHolder">
                                     <div className="Icon1">
                                             <img className="LocationIcon" onClick={this.mapsSelector} src={LocationIcon} alt=""/>
-                                            <h3>Address</h3>
-                                            <a href="">Hamagal - 12 Karmiel Israel</a>
+                                            <h3 onClick={this.mapsSelector}>כתובת</h3>
+                                            <a href="" onClick={this.mapsSelector}>המגל 12 - כרמיאל</a>
                                     </div>
                                     <div className="Icon1">
                                         <a href="tel:04-8660523">
                                         <img src={CallIcon} alt=""/>
-                                        <h3>Phone</h3>
+                                        <h3>טלפון</h3>
                                         <p>04-8660523</p>
                                         </a>
 
                                     </div>
                                     <div className="Icon1">
                                         <a href="mailto:Atec@bezeqint.net">
-
-
                                         <img src={MailIcon} alt=""/>
-                                        <h3>Email</h3>
-                                        <a style={{color:'#fff'}}  href="mailto:Atec@bezeqint.net">Email us
+                                        <h3>אימייל</h3>
+                                        <a style={{color:'#fff'}}  href="mailto:Atec@bezeqint.net">שלח אימייל
                                         </a>
                                         </a>
                                     </div>

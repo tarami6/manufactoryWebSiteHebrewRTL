@@ -81,25 +81,17 @@ class About extends Component {
                                         <img src={Img1927} className="Image03" alt=""/>
                                     </div>
                                     <div className="ContentHolder03">
-                                        <h1>1927</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">1927</h2>
+                                        <p className="rtlText">
+                                            עקיבא טולוצ'נסקי הוקמה ב-1927 ע"י מר טולוצ'ינסקי. את עיקר פעילותה החלה כחברה קבלנית לעבודות חשמל בתעשייה: הקמת מתקני חשמל שונים, תחנות שאיבה, תחנות השנאה, תכנון וייצור מכונות ייעודיות ולוחות פיקוד בקרה.
                                         </p>
                                     </div>
                                 </div>
                                 <div className="ProductsHolder">
                                     <div className="ContentHolder04">
-                                        <h1>1975</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">1975</h2>
+                                        <p className="rtlText">
+                                            בשנת 1975 נפטר מייסד החברה. החברה עברה לניהול הדור השני: הורחבה פעילות הייצור במגוון מוצרים בתחום המתכת בטכנולוגיות כבישה קרה וחמה, עיבוד שבבי, כיפוף וניקוב, ייצור של צנרת גמישה ממתכת עם כולל ריתוך צנרת בלחץ גבוה. CO2, עבודות ריתוך בארגון, אלקטרודה ו PVCציפוי עם התקדמות בייצור הצנרת, החברה פיתחה את תחום הפלסטיק והחלה מייצרת מוצרים בטכנולוגיות אקסטרוזיה והזרקה.
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">
@@ -113,25 +105,18 @@ class About extends Component {
                                         <img src={Img1990} className="Image03" alt=""/>
                                     </div>
                                     <div className="ContentHolder03">
-                                        <h1>1990</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">1990</h2>
+                                        <p className="rtlText">
+                                            בתחילת שנות ה-90 החברה נרשמה כחברת עקיבא טולוצ'ינסקי קבלנים לעבודות חשמל בע"מ, הדור השלישי הצטרף לניהול עם הדור השני. החברה הרחיבה את פעילות הייצור והחלה לייצר אבזרי חשמל לפי תקנים בינלאומיים שונים ומוטות הארקה לפי התקן ההולנדי המחמיר KEMA.
+                                            בשנת 1996אושרה החברה ע"י מכון התקנים הישראלי ל- 9002 ISO.
                                         </p>
                                     </div>
                                 </div>
                                 <div className="ProductsHolder">
                                     <div className="ContentHolder04">
-                                        <h1>2009</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">2009</h2>
+                                        <p className="rtlText">
+                                            בשנת 2009 עברה השליטה בחברה לדור הרביעי למשפחת טולוצ'ינסקי והמפעל עבר מחיפה לאזור התעשייה בכרמיאל. המבנה החדש אפשר הרחבה ושיפור קווי ייצור קיימים עם הכנסת טכנולוגיות חדישות בתחומי ההלחמה האולטרסונים.
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">
@@ -144,25 +129,18 @@ class About extends Component {
                                         <img src={Img2019} className="Image03" alt=""/>
                                     </div>
                                     <div className="ContentHolder03">
-                                        <h1>2019</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">2019</h2>
+                                        <p className="rtlText">
+                                            כיום עוסקת החברה בתכנון, פיתוח, ייצור ושיווק של מוצרי פלסטיק ומתכת והשילובים שלהם, ובאחזקת תווי תקן למוצריה. החברה דוגלת ברמת איכות הגבוהה ביותר במוצריה ובמוצרים שמייצרת בקבלנות משנה.
                                         </p>
                                     </div>
                                 </div>
                                 <div className="ProductsHolder">
                                     <div className="ContentHolder04">
-                                        <h1>2025</h1>
-                                        <p>
-                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                            laying out print, graphic or web designs. The passage is attributed to an
-                                            unknown typesetter in the 15th century who is thought to have scrambled
-                                            parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
-                                            book. It usually begins with
+                                        <h2 className="titleGrey">2025</h2>
+                                        <p className="rtlText">
+                                            מעבר להיסטוריה המכובדת והמרשימה שלה, חברת עקיבא טולוצ'ינסקי היא בעלת חזון ברור ומגובש, המצעיד אותה בבטחה היישר לקראת עידן תעשייה 4.0.
+                                            החזון שלנו הוא פשוט למדי, אבל יחד עם זאת, יוצא דופן בייחודו - אנחנו מאמינים כי מקצועיות או חדשנות תעשייתית אינן יכולות להתקיים אך ורק בזכות עצמן, אם הן אינן מלוות ביתרון נוסף - העשייה המלווה בחיוך. זו הייתה דרכנו מאז ומעולם, וזו תמשיך להיות הדרך היחידה בה נמשיך לעשות עסקים עם לקוחותינו, ספקינו ושותפינו העסקיים!
                                         </p>
                                     </div>
                                     <div className="ImageHolder06">

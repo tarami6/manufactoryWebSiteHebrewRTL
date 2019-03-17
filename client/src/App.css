@@ -3,6 +3,37 @@ body {
     background-color: #e05627;;
 }
 
+/* fronts */
+@font-face {
+    font-family: 'Nachlieli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nachlieli'),
+    url(./assets/fonts/nachlieliclm-light-webfont.ttf) format('ttf'),
+    url(./assets/fonts/nachlieliclm-light-webfont.woff) format('woff');
+}
+/* fronts */
+@font-face {
+    font-family: 'NachlieliBold';
+    font-style: oblique;
+    font-weight: 400;
+    src: local('Nachlieli'),
+    url(./assets/fonts/nachlieliclm-boldoblique-webfont.ttf) format('ttf'),
+    url(./assets/fonts/nachlieliclm-boldoblique-webfont.woff) format('woff');
+}
+/* fronts */
+@font-face {
+    font-family: 'MiriWin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nachlieli'),
+    url(./assets/fonts/miriwin-webfont.ttf) format('ttf'),
+    url(./assets/fonts/miriwin-webfont.woff) format('woff');
+}
+h2{
+    text-align: center;
+}
+
 .AppContainer {
     width: 100%;
 
@@ -24,20 +55,24 @@ body {
     width: 90%;
     overflow: hidden;
 }
-.LocationIcon{
+
+.LocationIcon {
     cursor: pointer;
 }
-.LoaderHolder{
+
+.LoaderHolder {
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /*MainMenu*/
-.MenuHolder{
+.MenuHolder {
     display: none;
 }
+
 .ContainerHolder {
     height: 100vh;
     width: 10%;
@@ -79,16 +114,20 @@ body {
 
 .LinkText {
     color: gray;
+    font-family: 'NachlieliBold', serif;
 }
-.LinkText:hover{
+
+.LinkText:hover {
     color: #404041;
     text-decoration: none;
 }
-.CurrentPageLinkHolder{
+
+.CurrentPageLinkHolder {
     background-color: #e75024;
 }
-.CurrentPageLinkText{
-    color: #fff;
+
+.CurrentPageLinkText {
+    color: #fff !important;
 }
 
 /*HOME PAGE*/
@@ -126,10 +165,25 @@ body {
 
 .Title01 {
     text-align: center;
+    font-family: 'NachlieliBold', serif;
+}
+.titleGrey{
+    color: #adabab;
+}
+.fontTester {
+    font-family: "Margarine", 'Suez One', serif;
+}
+
+.rtlText {
+    text-align: justify;
+    direction: rtl;
+    font-family: 'Nachlieli', serif;
 }
 
 .TextHolder {
     padding: 0 150px;
+
+
 }
 
 .TextHolderOrange {
@@ -313,8 +367,9 @@ body {
     margin-top: 3vh;
     margin-bottom: 5vh;
     padding: 0 !important;
-    padding-left: 20px !important;
+    padding-right: 20px !important;
     color: #e75023;
+    direction: rtl;
 }
 
 .ContentHolder05 > div > ul > li > p {
@@ -383,6 +438,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #adabab !important;
 }
 
 .ContentHolder08 {
@@ -451,7 +507,7 @@ body {
     font-size: 22px;
 }
 
-.Icon1 > img, .Icon1 > a>  img {
+.Icon1 > img, .Icon1 > a > img {
     width: 20vh;
     height: 20vh;
 }
@@ -494,6 +550,7 @@ body {
 
     .Image03 {
         width: 85%;
+        border-radius: 2px;
     }
 
     .ProductsHolder, .ServicesHolder {
@@ -531,10 +588,6 @@ body {
     .LogoImage {
         height: 60%;
     }
-}
-
-@media only screen and (max-width: 992px) {
-
     .ColPageHolder {
         width: 100vw;
     }
@@ -542,10 +595,17 @@ body {
     .ContentHolder02 {
         width: 80%;
     }
+    .OnVideo {
+         width: initial;
+     }
 }
 
+
 @media only screen and (max-width: 720px) {
-    .Video01{
+    .Submenu {
+        padding: 0 0;
+    }
+    .Video01 {
         display: none;
     }
 
@@ -607,7 +667,7 @@ body {
     }
 
     .ProductsHolder, .ServicesHolder {
-        padding-top: 0px;
+        padding-top: 75px;
     }
 
     .ProductsAndServiceConatainer {
@@ -695,34 +755,42 @@ body {
     .OnVideo > .ProductsAndServiceConatainer > .ServicesHolder {
         flex-direction: column-reverse;
     }
-    .OnVideo > .ProductsAndServiceConatainer > .ProductsHolder{
+
+    .OnVideo > .ProductsAndServiceConatainer > .ProductsHolder {
         flex-direction: column;
     }
+
     .ContentHolder03, .ContentHolder04 {
         width: 100%;
         padding: 0px 5% 0% 5%;
     }
-    .ImageHolder07, .ImageHolder06{
+
+    .ImageHolder07, .ImageHolder06 {
         width: 100%;
         padding: 5%;
         margin-bottom: 10vh;
     }
+
     .Image03 {
         width: 100%;
     }
+
     .FirstContent, .SecondContent, .ThirdContent {
         padding: 5%;
     }
+
     .FutureContainer01 {
         height: 100vh;
         background-size: 100% 100vh;
 
     }
+
     .IconHolder {
         flex-direction: column;
         padding: 3vh;
     }
-    .Icon1 > img, .Icon1 > a>  img {
+
+    .Icon1 > img, .Icon1 > a > img {
         width: 15vh;
         height: 15vh;
     }
@@ -800,19 +868,30 @@ body {
         text-decoration: none;
         border-bottom: 1px solid;
     }
+    .LinkTextMobile:hover {
+        font-size: 30px;
+        color: #fff;
+        padding: 3vh;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
 }
 
 /*animation*/
 *, *:before, *:after {
-    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.mouse_wave > p:nth-child(1),.mouse_wave > p:nth-child(2) {
+.mouse_wave > p:nth-child(1), .mouse_wave > p:nth-child(2) {
     color: lightgray;
 }
-.mouse_wave > p:nth-child(3){
+
+.mouse_wave > p:nth-child(3) {
     color: #E75024;
 }
+
 .mouse_wave {
     margin: 0 auto;
     display: flex;
@@ -823,8 +902,8 @@ body {
     margin-top: 100%;
     cursor: pointer;
 }
-.scroll_arrows
-{
+
+.scroll_arrows {
     display: block;
     width: 5px;
     height: 5px;
@@ -837,32 +916,30 @@ body {
     width: 16px;
     height: 16px;
 }
-.one
-{
+
+.one {
     margin-top: 1px;
 }
-.one, .two, .three
-{
+
+.one, .two, .three {
     -webkit-animation: mouse-wave 1s infinite;
     -moz-animation: mouse-wave 1s infinite;
 }
-.one
-{
+
+.one {
     -webkit-animation-delay: .1s;
     -moz-animation-delay: .1s;
     -webkit-animation-direction: alternate;
 }
 
-.two
-{
+.two {
     -webkit-animation-delay: .2s;
     -moz-animation-delay: .2s;
     -webkit-animation-direction: alternate;
     margin-top: -6px;
 }
 
-.three
-{
+.three {
     -webkit-animation-delay: .3s;
     -moz-animation-delay: .3s;
     -webkit-animation-direction: alternate;
@@ -872,27 +949,54 @@ body {
 
 @-webkit-keyframes mouse-wave {
 
-    0%   { opacity: 0;}
-    50%  { opacity: .5;}
-    100% { opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-moz-keyframes mouse-wave {
 
-    0%   { opacity: 0; }
-    50%  { opacity: .5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-o-keyframes mouse-wave {
 
-    0%   { opacity: 0; }
-    50%  { opacity: .5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes mouse-wave {
 
-    0%   { opacity: 0; }
-    50%  { opacity: .5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*LoaderAnimation*/
@@ -918,7 +1022,7 @@ body {
 .cs-loader-inner label {
     font-size: 20px;
     opacity: 0;
-    display:inline-block;
+    display: inline-block;
 }
 
 @keyframes lol {
