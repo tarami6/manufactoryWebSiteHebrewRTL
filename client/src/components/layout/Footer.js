@@ -40,7 +40,7 @@ class Footer extends Component {
                     <div className="Col12">
                         <div className="ContentHolder05">
                             <h3 className="rtlText">שעות פעילות</h3>
-                            <p className="TimingText rtlText"><Time className="TimeIcon"/> 9:00 - 18:00</p>
+                            <p className="TimingText rtlText"><Time className="TimeIcon"/> 18:00 - 9:00</p>
                         </div>
                     </div>
                     <div className="Col12">
