@@ -35,13 +35,12 @@ class Footer extends Component {
                                 </ul>
                                 <p>Copyright 2019 All Rights reserves</p>
                             </div>
-
                         </div>
                     </div>
                     <div className="Col12">
                         <div className="ContentHolder05">
                             <h3 className="rtlText">שעות פעילות</h3>
-                            <p className="TimingText rtlText"><Time className="TimeIcon"/> 17:00 - 18:00</p>
+                            <p className="TimingText rtlText"><Time className="TimeIcon"/> 9:00 - 18:00</p>
                         </div>
                     </div>
                     <div className="Col12">
@@ -53,12 +52,10 @@ class Footer extends Component {
                             <p className="rtlText"><Phone className="TimeIcon"/>  <a href="tel:04-8660523">04-8620254</a> </p>
                             <p className="rtlText"><Email className="TimeIcon"/> <a href='mailto:Atec@bezeqint.net'>שלח לנו מייל
                             </a> </p>
-
                         </div>
                     </div>
                 </div>
             </div>
-
         );
     }
 }

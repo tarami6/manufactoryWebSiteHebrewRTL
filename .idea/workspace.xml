@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdc007e9-2941-4db6-b76e-a2f265e00289" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/miriwin-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/miriwin-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/nachlieliclm-boldoblique-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/nachlieliclm-boldoblique-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/nachlieliclm-light-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/nachlieliclm-light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/IsraelFlag.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/UsaFlag.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/firstCover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/product01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/MainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/MainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Services.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/pages/Services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="119" column="89" selection-start-line="119" selection-start-column="89" selection-end-line="119" selection-end-column="89" />
+            <state relative-caret-position="186">
+              <caret line="115" column="190" selection-start-line="115" selection-start-column="190" selection-end-line="115" selection-end-column="190" />
             </state>
           </provider>
         </entry>
@@ -104,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="552" column="26" selection-start-line="552" selection-start-column="26" selection-end-line="552" selection-end-column="26" />
+            <state relative-caret-position="261">
+              <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -156,7 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Submenu</find>
       <find>VideoBackground01</find>
       <find>FooterContainer</find>
       <find>FutureContainer</find>
@@ -186,6 +163,7 @@
       <find>.ProductsHolder, .ServicesHolder</find>
       <find>.Submenu</find>
       <find>.Image03</find>
+      <find>בהעמ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,8 +188,8 @@
         <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/Footer.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/MainMenu.js" />
-        <option value="$PROJECT_DIR$/client/src/App.css" />
         <option value="$PROJECT_DIR$/client/src/components/pages/Services.js" />
+        <option value="$PROJECT_DIR$/client/src/App.css" />
       </list>
     </option>
   </component>
@@ -234,40 +212,6 @@
             <path>
               <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
               <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="manufactoryWebSiteHebrewRTL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="manufactoryWebSiteHebrewRTL" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,17 +275,18 @@
       <workItem from="1551080858458" duration="55770000" />
       <workItem from="1551278239179" duration="12948000" />
       <workItem from="1551293020229" duration="3606000" />
-      <workItem from="1552835334510" duration="2170000" />
+      <workItem from="1552835334510" duration="3086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136434000" />
+    <option name="totallyTimeSpent" value="137350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="792" y="47" width="888" height="937" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28950405" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28950405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -502,17 +447,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/App.css">
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/Services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="552" column="26" selection-start-line="552" selection-start-column="26" selection-end-line="552" selection-end-column="26" />
+        <state relative-caret-position="186">
+          <caret line="115" column="190" selection-start-line="115" selection-start-column="190" selection-end-line="115" selection-end-column="190" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/Services.js">
+    <entry file="file://$PROJECT_DIR$/client/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="119" column="89" selection-start-line="119" selection-start-column="89" selection-end-line="119" selection-end-column="89" />
+        <state relative-caret-position="261">
+          <caret line="80" column="27" lean-forward="true" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
         </state>
       </provider>
     </entry>
