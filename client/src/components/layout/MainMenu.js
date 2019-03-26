@@ -88,7 +88,7 @@ class MainMenu extends Component {
                                     >צור קשר</Link>
                                 </div>
                                 <div className="LanguageHolder">
-                                    <a href="" className="LinkText">
+                                    <a href="http://www.yptolo.com/" className="LinkText">
                                         <img src={Usa} width={40} height={20} alt=""/>
                                     </a>
                                 </div>
