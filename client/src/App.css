@@ -536,6 +536,61 @@ h2{
 
 }
 
+/*//Catalog*/
+
+.CatalogHolder{
+    align-content: center;
+    justify-content: center;
+    background-color: #E3E3E4;
+    display: flex;
+    width: 90vw;
+}
+.CatalogPageHolder{
+    border: 0px;
+    align-content: center;
+    justify-content: center;
+    background-color: #E3E3E4;
+    display: flex;
+}
+#pdfWrapper{
+    align-content: center;
+    justify-content: center;
+    background-color: #E3E3E4;
+    display: flex;
+    width: 90vw;
+}
+.ButtonMdArrowBack{
+    background-color: #E3E3E4;
+    border: 0px;
+}
+
+.ButtonMdArrowBack:hover{
+    background-color:  #dadade;
+}
+
+.ButtonMdArrowBack:focus{
+    outline: 1px auto #E65124;
+}
+
+.PageTextHolder{
+    color: #888A8D;
+}
+
+
+
+
+.MdArrowBack {
+    color: #e75023;
+    margin-bottom: 2px;
+    font-size: 80px;
+}
+
+.MdArrowForward {
+    color: #e75023;
+    margin-bottom: 2px;
+    font-size: 80px;
+}
+
 
 /*Media Query*/
 @media only screen and (min-width: 1201px) and (max-width: 1201px) {

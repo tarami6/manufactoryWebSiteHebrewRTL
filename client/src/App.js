@@ -14,7 +14,9 @@ import HomePage from './components/pages/HomePage';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import About from './components/pages/About';
-import Contact from './components/pages/Contact';
+import Contact from './components/pages/Contact'
+import Catalog from './components/pages/Catalog';
+
 
 
 class App extends Component {
@@ -61,10 +63,11 @@ class App extends Component {
                                         <Route exact path="/services"
                                                render={() => <Services state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
                                         <Route exact path="/products" render={() => <Products state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}
-                                              />
+                                        />
                                         <Route exact path="/about"
                                                render={() => <About state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
                                         <Route exact path="/contact"  render={() => <Contact state={this.state} changeScrollState={this.changeScrollState.bind(this)} />}/>
+                                        <Route exact path="/catalog"  render={() => <Catalog  />}/>
                                         <Footer/>
                                     </div>
                                     <div className="NavHolder">
