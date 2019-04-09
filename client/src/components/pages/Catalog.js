@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Document, Page} from "react-pdf";
+import {Document, Page, } from "react-pdf";
 import {Animated} from "react-animated-css";
 import MdArrowBack from 'react-icons/lib/md/arrow-back';
 import MdArrowForward from 'react-icons/lib/md/arrow-forward';
