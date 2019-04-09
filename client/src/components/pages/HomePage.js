@@ -85,12 +85,12 @@ class HomePage extends Component {
                     <div className="ProductsAndServiceConatainer">
                         <div className="ServicesHolder">
                             <div className="ImageHolder02">
-                                <img src={Services} className="Image03" alt=""/>
+                                <img src={Services} className="Image03" alt="תעשייה 4.0"/>
                             </div>
                             <div className="ContentHolder03">
                                 <h1 className="rtlText titleGrey">השירותים שלנו</h1>
                                 <p className="rtlText">
-                                    המפעל שלנו כולל מספר מחלקות שונות העוסקות ממגוון תחומי עיסוק רחב, בהזרקות הפלסטיק ועד לעיבוד שבבי, כולל כל מה שנמצא ביניהם. אנחנו מלווים כל לקוח שלנו, קטן או גדול, משלב התכנון והפיתוח של המוצר הנדרש ועד לשלב יצור המוצר הסופי, מורכב ככל שיהיה. רמתה המקצועית של חברת עקיבא טולוצ'ינסקי מאפשרת לה להבטיח, כי השירות הנלווה למוצר, אף הוא יהיה נרמה הראשונה במעלה.
+                                    המפעל שלנו כולל מספר מחלקות שונות העוסקות ממגוון תחומי עיסוק רחב, בהזרקות הפלסטיק ועד לעיבוד שבבי, כולל כל מה שנמצא ביניהם. אנחנו מלווים כל לקוח שלנו, קטן או גדול, משלב התכנון והפיתוח של המוצר הנדרש ועד לשלב יצור המוצר הסופי, מורכב ככל שיהיה. רמתה המקצועית של חברת עקיבא טולוצ'ינסקי מאפשרת לה להבטיח, כי השירות הנלווה למוצר, אף הוא יהיה ברמה הראשונה במעלה.
                                 </p>
                                 <Link to="/services">
                                     <button className="ContactUs rtlText">תראו לי עוד...</button>
@@ -112,7 +112,7 @@ class HomePage extends Component {
 
                             </div>
                             <div className="ImageHolder03">
-                                <img src={Products} className="Image03" alt=""/>
+                                <img src={Products} className="Image03" alt="תעשייה 4.0" />
                             </div>
 
                         </div>
